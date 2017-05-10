@@ -1,0 +1,71 @@
+#menu_venu {
+    width: 50%;
+    float: left;
+}
+#menu_venu button {
+    background: #f00;
+    color:  #fff;
+    padding:  .5em;
+    margin:  .5em;
+    float: right;
+}
+#menu_venu div {
+    width: 100%;
+    float: left;
+}
+#menu_venu li {
+    float: left;
+    width: 94%;
+    padding: 1%;
+    margin: 1%;
+    border: 1px solid #ccc;
+}
+#menu_venu li h4 {
+    text-transform: uppercase;
+    float: left;
+    width: 100%;
+}
+#menu_venu li h4:hover {
+    cursor: pointer;
+}
+#menu_venu li input {
+    width:  80%;
+    padding:  0.5em;
+    margin:  0.5em;
+}
+#menu_venu li input:focus {
+    background: #cff9bb;
+    color: #1a1a1a;
+}
+#menu_venu li ul {
+    padding-left:  2%;
+}
+#menu_venu li span {
+    height: 100%;
+    background: #f5f4f4;
+    float: left;
+    width:  100%;
+    margin:  10px auto;
+}
+#menu_venu li ul li {
+    background: #cff9bb;
+}
+#menu_venu li ul li ul li {
+    background: #fdfdd0;
+}
+#menu_venu li ul li ul li ul li {
+    background: #ccddeb
+}
+#menu_venu li span h4 {
+    
+    text-transform: uppercase;
+    padding:  0.5em;
+    margin: 0;
+}
+#menu_venu .placeholder {
+    visibility: hidden;
+}
+
+.hoverActive {
+   background-color: #ffffcc;
+}
