@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+	<modules>
+		<Vstudio_Venu>
+			<version>1.2.0.0</version>
+		</Vstudio_Venu>
+	</modules>
+	<adminhtml>
+		<layout>
+			<updates>
+				<venu module="vstudio_venu">
+					<file>venu.xml</file>
+				</venu>
+			</updates>
+		</layout>
+	</adminhtml>
+	<admin>
+		<routers>
+			<adminhtml>
+				<args>
+					<modules>
+						<Vstudio_Venu after="Mage_Adminhtml">Vstudio_Venu_Adminhtml</Vstudio_Venu>
+					</modules>
+				</args>
+			</adminhtml>
+		</routers>
+	</admin>
+	<frontend>
+		<routers>
+			<vstudio_venu>
+				<use>standard</use>
+				<args>
+					<module>Vstudio_Venu</module>
+					<frontName>venu</frontName>
+				</args>
+			</vstudio_venu>
+		</routers>
+		<!-- this will add layout file at app > design > frontend > default > layout -->
+		<layout>
+			<updates>
+				<venu module="vstudio_venu">
+					<file>venu.xml</file>
+				</venu>
+			</updates>
+		</layout>
+	</frontend>
+	<global>
+		<!-- … create a block elements ... -->
+		<blocks>
+			<vstudio_venu>
+				<class>Vstudio_Venu_Block</class>
+			</vstudio_venu>
+		</blocks>
+		<models>
+			<vstudio_venu>
+				<!-- root name -->
+				<class>Vstudio_Venu_Model</class>
+				<resourceModel>vstudio_venu_resource</resourceModel>
+			</vstudio_venu>
+			<vstudio_venu_resource>
+				<class>Vstudio_Venu_Model_Resource</class>
+				<entities>
+					<venu>
+						<table>vstudio_venu_menu</table>
+					</venu>
+					<menuitem>
+						<table>vstudio_venu_menuitem</table>
+					</menuitem>
+				</entities>
+			</vstudio_venu_resource>
+		</models>
+		<resources>
+			<vstudio_venu_setup>
+				<setup>
+					<module>Vstudio_Venu</module>
+					<model>Vstudio_Venu</model>
+				</setup>
+			</vstudio_venu_setup>
+		</resources>
+		<!-- … other elements ... -->
+		<helpers>
+			<vstudio_venu>
+				<class>Vstudio_Venu_Helper</class>
+			</vstudio_venu>
+		</helpers>
+	</global>
+</config>

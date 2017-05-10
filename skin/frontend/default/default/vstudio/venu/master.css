@@ -1,0 +1,193 @@
+.venu-container {
+    width:100%;
+    float:left;
+    clear: both;
+}
+.venu-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.05);
+    widows: auto;
+    float: left;
+    clear:both;
+    width:100%;
+    text-align: center;
+
+}
+.venu-menu,
+.venu-menu li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: none;
+}
+.venu-menu > li {
+    position: relative;
+}
+
+.venu-menu li a {
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+}
+.venu-menu  ul {
+    position: absolute;
+    top: auto;
+    font-size: 13px;
+    opacity: 0;
+    padding: 0;
+    margin:0;
+    padding-top:6px;
+}
+.venu-menu li ul li {
+    background: #ffffff;
+    display: block;
+    position: relative;
+}
+.venu-menu ul ul {
+    padding: 0;
+    margin:0;
+    padding-left: 6px;
+}
+
+.venu-menu ul > li:hover > ul {
+    top: 0;
+    left:100%;
+    opacity: 1;
+    -webkit-transition: top 0.2s ease, opacity 0.2s ease-in;
+    -moz-transition: top 0.2s ease, opacity 0.2s ease-in;
+    -ms-transition: top 0.2s ease, opacity 0.2s ease-in;
+    -o-transition: top 0.2s ease, opacity 0.2s ease-in;
+    transition: top 0.2s ease, opacity 0.2s ease-in;
+
+}
+.venu-menu ul li a {
+    text-decoration: none;
+    font-weight: 400;
+    padding: 11px 25px;
+    width: 180px;
+    color: #777777;
+    background: #ffffff;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1), 1px 1px 1px rgba(0, 0, 0, 0.1), -1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.venu-menu ul li:hover > a {
+    color: #333333;
+}
+
+/*** Horizontal ***/
+.venu-menu-horz > li {
+    float:left;
+    padding:10px;
+}
+ul.venu-menu-horz > li:hover > ul {
+    top: auto;
+    left: 0;
+    opacity: 1;
+}
+
+/*** Sample Menu ***/
+.sample_menu {
+    margin: 5px auto;
+    text-align: center;
+}
+
+.sample_menu > li {
+    display: inline-block;
+    float:none;
+}
+/******************/
+
+/*** Vertical ***/
+.venu-menu-vert  {
+    position: relative;
+    z-index: 597;
+    float: left;
+    width:auto;
+    text-align: left;
+}
+.venu-menu-vert > li {
+    float: left;
+    min-height: 1px;
+    line-height: 1em;
+    border-left: 3px solid #3dbd99;
+    display: block;
+}
+.venu-menu-vert > li:hover > ul {
+    top: 0;
+    left: 100%;
+    opacity: 1;
+}
+.venu-menu-vert li.hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+.venu-menu-vert ul {
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 99%;
+    z-index: 598;
+    width: 99%;
+}
+.venu-menu-vert ul li {
+    float: none;
+}
+.venu-menu-vert li:hover > ul {
+    visibility: visible;
+}
+.venu-menu-vert  li {
+    float: none;
+}
+.venu-menu-vert  ul li {
+    font-weight: normal;
+}
+.venu-menu-vert ul ul {
+    top:0;
+    left:100%;
+
+}
+.venu-menu-vert ul ul li {
+    padding-left: 20px;
+}
+.venu-menu-vert  > li > a {
+    padding: 10px 20px;
+}
+.venu-menu-vert  > li:hover {
+    border-left: 3px solid #3dbd99;
+}
+.venu-menu-vert  li:hover > a {
+    color: #3dbd99;
+}
+.venu-menu-vert ul a:link,
+.venu-menu-vert ul a:visited {
+    font-weight: 400;
+    font-size: 14px;
+}
+.venu-menu-vert ul {
+    width: 180px;
+    background: none;
+}
+.venu-menu-vert ul a {
+    padding: 8px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+.venu-menu-vert ul li {
+    background: #fff;
+}
+
+
+
+

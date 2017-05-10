@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+
+		<Vstudio_Venu>
+			<active>true</active>
+			<codePool>community</codePool>
+		</Vstudio_Venu>
+
+	</modules>
+</config>
+
