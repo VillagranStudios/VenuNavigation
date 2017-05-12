@@ -14,6 +14,14 @@ class Vstudio_Venu_Block_Adminhtml_MenuManager_Edit_Tab_Form extends Mage_Adminh
 		$fieldset = $form->addFieldset('menu_edit_form', array('legend' => Mage::helper('vstudio_venu')->__('Menu  information')));
 		$options = Mage::getSingleton('vstudio_venu/options');
 
+		$fieldset->addType('notice', 'Vstudio_Venu_Block_Adminhtml_Form_Field_Renderer_Notice');     
+			
+		$fieldset->addField('instruction', 'notice', array(
+				'name'      => 'instructions',
+				'text'     => 'After you click save and continue you will be able to see your custom link on the Menu Information tab'
+		));
+
+
 		$fieldset->addField('menu_title', 'text', array(
 			'label' => Mage::helper('vstudio_venu')->__('Menu Title'),
 			'class' => 'required-entry',

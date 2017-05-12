@@ -38,6 +38,8 @@ class Vstudio_Venu_Block_Adminhtml_Form_Field_Renderer_Notice extends  Varien_Da
 
     public function getElementHtml()
     {   
-        return '<h1>instructions</h1>';
+        $html = '<p id="'.$this->getHtmlId().'" '.$this->serialize($this->getHtmlAttributes()).'>'.$this->getText().'<p/>';
+        $html .= $this->getAfterElementHtml();
+        return $html;
     }
 }
