@@ -14,7 +14,7 @@ class Vstudio_Venu_Block_Adminhtml_MenuManager_Edit_Tab_Pages extends Mage_Admin
 			
 		$fieldset->addField('instruction', 'notice', array(
 				'name'      => 'instructions',
-				'text'     => 'After you click save and continue you will be able to see your custom link on the Menu Information tab'
+				'text'     => 'After you click save and continue you will be able to see each page as a menu item on the Menu Information tab'
 		));
 
 
