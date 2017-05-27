@@ -40,3 +40,4 @@
 !/var/package
 /var/package/*
 !/var/package/*.xml
+index.html
