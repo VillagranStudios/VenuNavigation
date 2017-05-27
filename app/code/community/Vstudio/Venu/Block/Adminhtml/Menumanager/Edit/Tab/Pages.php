@@ -10,6 +10,14 @@ class Vstudio_Venu_Block_Adminhtml_MenuManager_Edit_Tab_Pages extends Mage_Admin
         $this->setForm($form);
 
         $fieldset = $form->addFieldset('banner_form', array('legend' => Mage::helper('vstudio_venu')->__('Menu Pages')));
+        		$fieldset->addType('notice', 'Vstudio_Venu_Block_Adminhtml_Form_Field_Renderer_Notice');     
+			
+		$fieldset->addField('instruction', 'notice', array(
+				'name'      => 'instructions',
+				'text'     => 'After you click save and continue you will be able to see each page as a menu item on the Menu Information tab'
+		));
+
+
         $fieldset->addField('pages', 'multiselect', array(
             'label' => Mage::helper('vstudio_venu')->__('Visible In'),
             'name' => 'pages[]',

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+            <action method="addItem">
+                <type>skin_css</type>
+                <name>vstudio/venu/master.css</name>
+            </action>
+        </reference>
+        <reference name="footer">
+            <block type="vstudio_venu/menu" name="vstudio.venu" as="vstudio_venu"
+                   template="vstudio/venu/menu.phtml">
+                <action method="setData">
+                    <name>menu_title</name>
+                    <value>Sample Menu</value>
+                </action>
+            </block>
+        </reference>
+    </default>
+</layout>
