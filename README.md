@@ -1,10 +1,10 @@
-#Venu Menu Navigation
+# Venu Menu Navigation
 
-##Introduction:
+## Introduction:
 
 Create simple but versatile menu navigation from CMS pages, Categories URLs, or external URLs. Each element has css class so you can address any element by standard css.
 
-##Features:
+## Features:
 
 Upgrade Proof Module.
 Tested for Magento version 1.7.0.0 - 1.9.3.2
@@ -18,7 +18,7 @@ Fly-out menu when using the vertical menu
 You can easily add any menu to pages, static block, or categories pages by copying and pasting the block code that gets generated every time you create a new menu.
  
 
-##Installation / Configuration:
+## Installation / Configuration:
 
 After installation, make sure to clear you cache then:
 To create menus navigate to Menu >> Manage Menus
