@@ -70,6 +70,7 @@ class Vstudio_Venu_Block_Menu extends Mage_Core_Block_Template
 
     public function display_menu($items = array(), $parent = 0, $isChild = false, $options = array('menu_orientation' => 'horz'))
     {
+        $html = '';
         if (!empty($items[$parent])) {
 
             if (!empty($options)){
@@ -106,7 +107,7 @@ class Vstudio_Venu_Block_Menu extends Mage_Core_Block_Template
             }
 
             $i = 0;
-            echo ($isChild) ? '<ul class="venu-menu-sub">' : '' . $containerTag . '<ul ' . $menuId . 'class="venu-menu '.$title.' venu-menu-' . $menu_orientation . ' ' . $menuClass . '">';
+            $html .= ($isChild) ? '<ul class="venu-menu-sub">' : '' . $containerTag . '<ul ' . $menuId . 'class="venu-menu '.$title.' venu-menu-' . $menu_orientation . ' ' . $menuClass . '">';
             foreach ($items[$parent] as $item) {
                 switch ($i++) {
                     case 0:
@@ -119,15 +120,17 @@ class Vstudio_Venu_Block_Menu extends Mage_Core_Block_Template
                         $class = '';
                         break;
                 }
-                echo "<li class='venu-item {$class}'>";
-                echo '<a href="' . urldecode($item['item_link']) . '">';
-                echo $item['item_label'];
-                echo "</a>";
-                $this->display_menu($items, $item['id'], true, $options);
-                echo "</li>";
+                $html .= "<li class='venu-item {$class}'>";
+                $html .= '<a href="' . urldecode($item['item_link']) . '">';
+                $html .= $item['item_label'];
+                $html .= "</a>";
+                $html .= $this->display_menu($items, $item['id'], true, $options);
+                $html .= "</li>";
             }
-            echo ($isChild) ? "</ul>" : "</ul>$containerEndTag";
+            $html .= ($isChild) ? "</ul>" : "</ul>$containerEndTag";
         }
+
+        return $html;
     }
 
 }
