@@ -12,7 +12,8 @@ $options = $_menu->getMenuOptions($selectedMenu);
     foreach ($menuItems as $item) {
         $array[$item['parent_id']][] = $item;
     }
-    $_menu->display_menu($array, 0, false, $options);
+    $menu = $_menu->display_menu($array, 0, false, $options);
+    echo $menu;
     ?>
 
 <?php endif; ?>
