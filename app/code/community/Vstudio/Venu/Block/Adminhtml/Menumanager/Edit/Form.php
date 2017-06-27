@@ -1,4 +1,5 @@
 <?php
+
 class Vstudio_Venu_Block_Adminhtml_MenuManager_Edit_Form extends Mage_Adminhtml_Block_Widget_Form {
 
     protected function _prepareForm() {
